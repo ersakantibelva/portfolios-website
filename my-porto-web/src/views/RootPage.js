@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 export default function RootPage() {
   return (
-    <div className="flex flex-col min-h-screen mx-auto bg-red-200 max-w-screen">
+    <div className="flex flex-col min-h-screen mx-auto bg-honeydew max-w-screen">
       <Navbar />
       <Outlet />
       <Footer />
