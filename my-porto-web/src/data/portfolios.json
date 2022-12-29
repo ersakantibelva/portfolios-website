@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "This Is August - ECommerce App",
+    "description": "ReactJs app with user and admin client-side, ExpressJs server, and PostgreSQl as database. Deployed with Firebase and AWS.",
+    "techStack": [
+
+    ]
+  }
+]
