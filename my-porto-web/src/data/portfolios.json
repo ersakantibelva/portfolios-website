@@ -2,9 +2,44 @@
   {
     "id": 1,
     "name": "This Is August - ECommerce App",
-    "description": "ReactJs app with user and admin client-side, ExpressJs server, and PostgreSQl as database. Deployed with Firebase and AWS.",
+    "description": "ReactJs website with user and admin client-side, ExpressJs as framework in  server, and PostgreSQl as database. Deployed with Firebase and AWS.",
     "techStack": [
-
-    ]
+      "ReactJs",
+      "Redux",
+      "TailwindCSS",
+      "AWS",
+      "Firebase",
+      "ExpressJs"
+    ],
+    "githubLink": "https://github.com/ersakantibelva/p3-challenge-1-belva",
+    "imageUrl": "https://ik.imagekit.io/enybtlxa2/this-is-august.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672343092030"
+  },
+  {
+    "id": 2,
+    "name": "HackFit - Social Media App",
+    "description": "Social media with fitness theme website. Built with VueJs in client-side, ExpressJs as framework in  server, and PostgreSQl as database. Deployed with Firebase and Railway.",
+    "techStack": [
+      "VueJs",
+      "Pinia",
+      "TailwindCSS",
+      "Railway",
+      "Firebase",
+      "ExpressJs"
+    ],
+    "githubLink": "https://github.com/ersakantibelva/HackFit",
+    "deployedLink": "https://thisisaugust-d62cd.web.app/",
+    "imageUrl": "https://ik.imagekit.io/enybtlxa2/hackfit.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672343373243"
+  },
+  {
+    "id": 3,
+    "name": "HacktivMart - ECommerce (Groceries) App",
+    "description": "Groceries e-commerce website. Built with TailwindCSS as CSS framework in client-side, ExpressJs as framework in server, and PostgreSQl as database.",
+    "techStack": [
+      "ExpressJs",
+      "TailwindCSS",
+      "EJS"
+    ],
+    "githubLink": "https://github.com/ersakantibelva/hacktivmart",
+    "imageUrl": "https://ik.imagekit.io/enybtlxa2/hacktivmart.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672343373163"
   }
 ]
