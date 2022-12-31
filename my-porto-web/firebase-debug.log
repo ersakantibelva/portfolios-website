@@ -1,0 +1,110 @@
+[debug] [2022-12-31T07:32:03.394Z] ----------------------------------------------------------------------
+[debug] [2022-12-31T07:32:03.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ersak\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-31T07:32:03.398Z] CLI Version:   11.16.1
+[debug] [2022-12-31T07:32:03.398Z] Platform:      win32
+[debug] [2022-12-31T07:32:03.398Z] Node Version:  v16.18.0
+[debug] [2022-12-31T07:32:03.401Z] Time:          Sat Dec 31 2022 14:32:03 GMT+0700 (Western Indonesia Time)
+[debug] [2022-12-31T07:32:03.402Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-31T07:32:03.407Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-31T07:32:03.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-31T07:32:03.536Z] > authorizing via signed-in user (ersakantibelva@gmail.com)
+[debug] [2022-12-31T07:32:03.536Z] [iam] checking project tinycalicocat-web for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-31T07:32:03.537Z] > refreshing access token with scopes: []
+[debug] [2022-12-31T07:32:03.539Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-31T07:32:03.539Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-31T07:32:07.932Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-31T07:32:07.932Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-31T07:32:07.946Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tinycalicocat-web:testIamPermissions [none]
+[debug] [2022-12-31T07:32:07.947Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tinycalicocat-web:testIamPermissions x-goog-quota-user=projects/tinycalicocat-web
+[debug] [2022-12-31T07:32:07.947Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tinycalicocat-web:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-31T07:32:12.357Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tinycalicocat-web:testIamPermissions 200
+[debug] [2022-12-31T07:32:12.357Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tinycalicocat-web:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-31T07:32:12.358Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tinycalicocat-web [none]
+[debug] [2022-12-31T07:32:14.939Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-31T07:32:14.939Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-12-31T07:32:15.682Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tinycalicocat-web 200
+[debug] [2022-12-31T07:32:15.682Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tinycalicocat-web {"projectId":"tinycalicocat-web","projectNumber":"123521231611","displayName":"tinycalicocat","name":"projects/tinycalicocat-web","resources":{"hostingSite":"tinycalicocat-web"},"state":"ACTIVE","etag":"1_1db80289-f848-42af-9e8d-75b48770effc"}
+[info] 
+[info] === Deploying to 'tinycalicocat-web'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-12-31T07:32:15.690Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions [none]
+[debug] [2022-12-31T07:32:15.690Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-12-31T07:32:18.629Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions 200
+[debug] [2022-12-31T07:32:18.629Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions {"name":"projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[tinycalicocat-web]: beginning deploy... 
+[info] i  hosting[tinycalicocat-web]: found 14 files in build 
+[debug] [2022-12-31T07:32:18.645Z] [hosting] uploading with 200 concurrency
+[debug] [2022-12-31T07:32:19.120Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2022-12-31T07:32:19.121Z] [hosting][hash queue][FINAL] {"max":361,"min":4,"avg":39.642857142857146,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":369}
+[debug] [2022-12-31T07:32:19.122Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e:populateFiles [none]
+[debug] [2022-12-31T07:32:19.122Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e:populateFiles {"files":{"/favicon.ico":"4398284dcf7f2443cd031d774d8cf2231ec8e6df69abaa81ae93186d0d1efe34","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"bf7ce87756abd8e7fb59e137204dce908355e4ca41a12d118f4d809c196533d7","/index.html":"ea04d8ddc770d2156cd4ce617012b014609c20cd129fafde10893cb37a8a5042","/static/css/main.cee39ed7.css":"01135994e5bbf9acfe84ff7929d19a32543b3b7323ec56cd4e9f03cb58590d83","/static/css/main.cee39ed7.css.map":"8ff7b940ee98daa422283b08d0f184b6fd3760c85427b8c00bb7668b03283266","/static/js/787.5f61b254.chunk.js":"14f6372cfb5545cfb73cb4129c7655a0e2fb3bf9372d5acae8c52e39894ad221","/static/js/main.65cbf987.js.LICENSE.txt":"78d8dea6f15b2c71323a2960ef5f75ba698d7dee7d94c7341f8564dc2714cf87","/static/js/787.5f61b254.chunk.js.map":"3f52ff21d170156cf1365c93b2acec56e77b84aa1aad7e087268599add18de05","/static/media/logo.c9cf7a53013867d6320c.png":"e9e4b3ff4f2cedf677a5c45c8fe8d05832db2044b74790ae666422eec17ebe7e","/static/media/profile-pic.98b7a96aff12319149aa.jpg":"1040ff7cc5b30c3a4271d043d12121860314ef1fc020f197a47e69b39f888992","/static/js/main.65cbf987.js":"15a437e447146f6492fa350278abb116de11775d8a65b9df8846de42790af440","/static/media/this-is-august.bc18df71be744eafe21b.png":"f458ed10ce11a1599dc7cb6b125b50a86aaf13bb4e7f42937431805b0441a06c","/static/js/main.65cbf987.js.map":"bce0801351fc660a6de5bb78e2ea7114e3c104f9e4eccf14d4afc1e26e7b1030"}}
+[debug] [2022-12-31T07:32:21.072Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e:populateFiles 200
+[debug] [2022-12-31T07:32:21.072Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e:populateFiles {"uploadRequiredHashes":["bf7ce87756abd8e7fb59e137204dce908355e4ca41a12d118f4d809c196533d7","15a437e447146f6492fa350278abb116de11775d8a65b9df8846de42790af440","bce0801351fc660a6de5bb78e2ea7114e3c104f9e4eccf14d4afc1e26e7b1030","ea04d8ddc770d2156cd4ce617012b014609c20cd129fafde10893cb37a8a5042"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files"}
+[debug] [2022-12-31T07:32:21.074Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bf7ce87756abd8e7fb59e137204dce908355e4ca41a12d118f4d809c196533d7 [none]
+[debug] [2022-12-31T07:32:21.074Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bf7ce87756abd8e7fb59e137204dce908355e4ca41a12d118f4d809c196533d7 [stream]
+[debug] [2022-12-31T07:32:21.075Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/15a437e447146f6492fa350278abb116de11775d8a65b9df8846de42790af440 [none]
+[debug] [2022-12-31T07:32:21.075Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/15a437e447146f6492fa350278abb116de11775d8a65b9df8846de42790af440 [stream]
+[debug] [2022-12-31T07:32:21.077Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bce0801351fc660a6de5bb78e2ea7114e3c104f9e4eccf14d4afc1e26e7b1030 [none]
+[debug] [2022-12-31T07:32:21.077Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bce0801351fc660a6de5bb78e2ea7114e3c104f9e4eccf14d4afc1e26e7b1030 [stream]
+[debug] [2022-12-31T07:32:21.078Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/ea04d8ddc770d2156cd4ce617012b014609c20cd129fafde10893cb37a8a5042 [none]
+[debug] [2022-12-31T07:32:21.079Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/ea04d8ddc770d2156cd4ce617012b014609c20cd129fafde10893cb37a8a5042 [stream]
+[debug] [2022-12-31T07:32:21.080Z] [hosting][populate queue][FINAL] {"max":1955,"min":1955,"avg":1955,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1961}
+[debug] [2022-12-31T07:32:21.080Z] [hosting] uploads queued: 4
+[debug] [2022-12-31T07:32:24.679Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/ea04d8ddc770d2156cd4ce617012b014609c20cd129fafde10893cb37a8a5042 200
+[debug] [2022-12-31T07:32:24.680Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/ea04d8ddc770d2156cd4ce617012b014609c20cd129fafde10893cb37a8a5042 [stream]
+[debug] [2022-12-31T07:32:27.066Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bf7ce87756abd8e7fb59e137204dce908355e4ca41a12d118f4d809c196533d7 200
+[debug] [2022-12-31T07:32:27.066Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bf7ce87756abd8e7fb59e137204dce908355e4ca41a12d118f4d809c196533d7 [stream]
+[debug] [2022-12-31T07:32:32.477Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/15a437e447146f6492fa350278abb116de11775d8a65b9df8846de42790af440 200
+[debug] [2022-12-31T07:32:32.477Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/15a437e447146f6492fa350278abb116de11775d8a65b9df8846de42790af440 [stream]
+[debug] [2022-12-31T07:32:43.824Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bce0801351fc660a6de5bb78e2ea7114e3c104f9e4eccf14d4afc1e26e7b1030 200
+[debug] [2022-12-31T07:32:43.825Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tinycalicocat-web/versions/490a69eb2b71db6e/files/bce0801351fc660a6de5bb78e2ea7114e3c104f9e4eccf14d4afc1e26e7b1030 [stream]
+[debug] [2022-12-31T07:32:43.825Z] [hosting][upload queue][FINAL] {"max":22752,"min":3606,"avg":10939,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":22752}
+[info] +  hosting[tinycalicocat-web]: file upload complete 
+[debug] [2022-12-31T07:32:43.826Z] [hosting] deploy completed after 25195ms
+[debug] [2022-12-31T07:32:43.828Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "tinycalicocat-web"
+    },
+    "version": "projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e"
+  }
+]
+[info] i  hosting[tinycalicocat-web]: finalizing version... 
+[debug] [2022-12-31T07:32:43.831Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions/490a69eb2b71db6e updateMask=status%2Cconfig
+[debug] [2022-12-31T07:32:43.832Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions/490a69eb2b71db6e {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-12-31T07:32:52.419Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions/490a69eb2b71db6e 200
+[debug] [2022-12-31T07:32:52.419Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/versions/490a69eb2b71db6e {"name":"projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-31T07:32:17.654631Z","createUser":{"email":"ersakantibelva@gmail.com"},"finalizeTime":"2022-12-31T07:32:52.385197Z","finalizeUser":{"email":"ersakantibelva@gmail.com"}}
+[debug] [2022-12-31T07:32:52.420Z] [hosting] finalized version for tinycalicocat-web:[object Object]
+[info] +  hosting[tinycalicocat-web]: version finalized 
+[info] i  hosting[tinycalicocat-web]: releasing new version... 
+[debug] [2022-12-31T07:32:52.421Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/channels/live/releases versionName=projects%2F123521231611%2Fsites%2Ftinycalicocat-web%2Fversions%2F490a69eb2b71db6e
+[debug] [2022-12-31T07:32:52.421Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/channels/live/releases {}
+[debug] [2022-12-31T07:32:53.658Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/channels/live/releases 200
+[debug] [2022-12-31T07:32:53.659Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tinycalicocat-web/channels/live/releases {"name":"projects/123521231611/sites/tinycalicocat-web/channels/live/releases/1672471973183237","version":{"name":"projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-31T07:32:17.654631Z","createUser":{"email":"ersakantibelva@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp7_juTNIBvgmbCUnkeGyl5XagnzNAk7fuGAuxIVZA=mo"},"finalizeTime":"2022-12-31T07:32:52.385197Z","finalizeUser":{"email":"ersakantibelva@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp7_juTNIBvgmbCUnkeGyl5XagnzNAk7fuGAuxIVZA=mo"}},"type":"DEPLOY","releaseTime":"2022-12-31T07:32:53.183237617Z","releaseUser":{"email":"ersakantibelva@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp7_juTNIBvgmbCUnkeGyl5XagnzNAk7fuGAuxIVZA=mo"}}
+[debug] [2022-12-31T07:32:53.659Z] [hosting] release: {"name":"projects/123521231611/sites/tinycalicocat-web/channels/live/releases/1672471973183237","version":{"name":"projects/123521231611/sites/tinycalicocat-web/versions/490a69eb2b71db6e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-31T07:32:17.654631Z","createUser":{"email":"ersakantibelva@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp7_juTNIBvgmbCUnkeGyl5XagnzNAk7fuGAuxIVZA=mo"},"finalizeTime":"2022-12-31T07:32:52.385197Z","finalizeUser":{"email":"ersakantibelva@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp7_juTNIBvgmbCUnkeGyl5XagnzNAk7fuGAuxIVZA=mo"}},"type":"DEPLOY","releaseTime":"2022-12-31T07:32:53.183237617Z","releaseUser":{"email":"ersakantibelva@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp7_juTNIBvgmbCUnkeGyl5XagnzNAk7fuGAuxIVZA=mo"}}
+[info] +  hosting[tinycalicocat-web]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/tinycalicocat-web/overview
+[info] Hosting URL: https://tinycalicocat-web.web.app
+[debug] [2022-12-31T07:33:00.479Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ersak\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.

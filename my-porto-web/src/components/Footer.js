@@ -1,6 +1,5 @@
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa"
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -13,18 +12,18 @@ export default function Footer() {
               <h1>Built with React, Redux, and TailwindCSS</h1>
             </div>
             <div className="flex flex-col w-1/4">
-            <div className="flex items-center gap-3">
+            <a href="mailto:ersakantibelva@gmail.com" target="_blank" className="flex items-center gap-3">
               <MdEmail style={{ color: '#1D3557' }}/>
               <h1>ersakantibelva@mail.com</h1>
-            </div>
-            <Link to="https://www.linkedin.com/in/ersakanti-belva/" className="flex items-center gap-3">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/ersakanti-belva/" className="flex items-center gap-3">
               <FaLinkedin style={{ color: '#1D3557' }} />
               <h1>ersakantibelva</h1>
-            </Link>
-            <Link to="https://github.com/ersakantibelva" className="flex items-center gap-3">
+            </a>
+            <a target="_blank" href="https://github.com/ersakantibelva" className="flex items-center gap-3">
               <FaGithub style={{ color: '#1D3557' }} />
               <h1>Ersakanti Belva</h1>
-            </Link>
+            </a>
             </div>
           </div>
         </div>
