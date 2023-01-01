@@ -3,7 +3,7 @@ import profilePic from "../assets/profile-pic.jpg";
 
 export default function ResumePage() {
   return (
-    <div className="container flex flex-col min-h-screen mx-auto mb-4">
+    <div className="container flex flex-col min-h-[calc(100%-8rem)] mx-auto mb-4">
       <BackButton route={"/"} message={"Back to home"} />
       <div className="flex flex-col items-center w-full h-full">
         <div className="mt-4 text-5xl font-bold text-center text-prussian-blue">

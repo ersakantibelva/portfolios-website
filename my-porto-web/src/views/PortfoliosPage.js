@@ -6,7 +6,7 @@ import portofolios from "../data/portfolios.json";
 
 export default function ResumePage() {
   return (
-    <div className="container flex flex-col min-h-screen mx-auto">
+    <div className="container flex flex-col min-h-[calc(100%-8rem)] mx-auto">
       <BackButton route={"/"} message={"Back to home"} />
       <div className="mt-4 text-5xl font-bold text-center text-prussian-blue">
         All Projects
