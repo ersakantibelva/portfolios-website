@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <div className="h-full">
-      <section class="bg-landing bg-no-repeat bg-cover bg-center bg-fixed">
-        <div class="backdrop-brightness-25">
-          <div class="mx-auto container max-w-screen-xl px-4 py-32 lg:flex lg:h-screen 2xl:h-fit lg:items-center">
-            <div className="flex flex-col max-w-4xl mx-auto">
+    <div className="h-[calc(100%-8rem)]">
+      <section class="bg-landing bg-no-repeat bg-cover bg-center bg-fixed h-full">
+        <div class="backdrop-brightness-25 h-full">
+          <div class="mx-auto container max-w-screen-xl px-4 py-32 lg:flex lg:items-center h-full">
+            <div className="flex flex-col justify-center h-full max-w-4xl mx-auto">
               <div className="text-6xl font-semibold">
                 <span className="text-powder-blue">Hi,</span>
                 <span className="text-imperial-red"> I'am Belva</span>

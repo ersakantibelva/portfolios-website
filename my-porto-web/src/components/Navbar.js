@@ -4,7 +4,7 @@ import portoLogo from "../assets/logo.png";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 z-20 flex items-center h-full bg-white">
+    <div className="sticky top-0 z-20 flex items-center h-16 bg-white">
       <div className="container top-0 grid w-full h-16 grid-cols-4 mx-auto">
         <Link to="/" className="flex items-center max-h-full overflow-hidden flex-start">
           <img src={portoLogo} width="220" alt="" />
