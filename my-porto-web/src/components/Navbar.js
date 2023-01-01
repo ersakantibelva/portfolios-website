@@ -6,10 +6,10 @@ export default function Navbar() {
   return (
     <div className="sticky top-0 z-20 flex items-center h-16 bg-white">
       <div className="container top-0 grid w-full h-16 grid-cols-4 mx-auto">
-        <Link to="/" className="flex items-center max-h-full overflow-hidden flex-start">
-          <img src={portoLogo} width="220" alt="" />
+        <Link to="/" className="flex items-center w-3/4 overflow-hidden lg:4/5 xl:w-1/2 flex-start justify-self-center">
+          <img src={portoLogo} alt="" />
         </Link>
-        <div className="flex items-center justify-around w-full col-start-4 font-semibold text-prussian-blue">
+        <div className="flex items-center justify-around w-full col-span-3 col-start-2 font-semibold md:col-span-2 md:col-start-3 lg:col-span-1 lg:col-start-4 text-prussian-blue">
           <Link to="/">
             <div>home</div>
           </Link>
